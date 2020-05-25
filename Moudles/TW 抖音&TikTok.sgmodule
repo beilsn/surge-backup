@@ -3,7 +3,7 @@
 #!system=ios
 
 [Rule]
-#RULE-SET,https://raw.githubusercontent.com/maicoo-l/Surge/master/rules/media/TikTok.list
+#RULE-SET,https://raw.githubusercontent.com/beilsn/surge-backup/master/Ruleset/TikTok.list
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) TW 307
@@ -16,5 +16,5 @@
 hostname = %APPEND% *.snssdk.com, *.amemv.com, *.akamaized.net, *.appsflyer.com, *.tiktokv.com, *.muscdn.com, *.byteoversea.com, *.musical.ly, *.ibyteimg.com, *.app-measurement.com
 
 [Script]
-抖音 & TikTok去广告&水印 = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
-抖音 & TikTok去广告&水印 = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
+抖音 & TikTok去广告&水印 = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/beilsn/surge-backup/master/Scripts/Aweme.js
+抖音 & TikTok去广告&水印 = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/beilsn/surge-backup/master/Scripts/Aweme.js
