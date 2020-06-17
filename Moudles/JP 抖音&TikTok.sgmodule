@@ -8,8 +8,8 @@
 [URL Rewrite]
 (?<=_region=)CN(?=&) JP 307
 
-(?<=&app_version=)16..(?=.?.?&) 1 307
-(?<=\?version_code=)16..(?=.?.?&) 1 307
+(?<=&app_version=)16.4.0(?=.?.?&) 1 307
+(?<=\?version_code=)16.4.0(?=.?.?&) 1 307
 
 (.*video_id=\w{32})(.*watermark=)(.*) $1 302
 [MITM]
