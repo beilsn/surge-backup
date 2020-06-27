@@ -1,0 +1,8 @@
+#!name=Block iOS Update
+#!desc=腾讯新闻签到  
+#!system=ios
+
+
+[Script]
+# > 腾讯新闻签到
+腾讯新闻 = type=cron,cronexp="*/3 8-10,13-16,19-22 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/txnews.js,script-update-interval=0
