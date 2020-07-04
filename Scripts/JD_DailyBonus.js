@@ -137,7 +137,7 @@ async function all() {
       JDUserSignPre(stop, 'JDBook', '京东商城-图书'), //京东图书
       JDUserSignPre(stop, 'JDShand', '京东拍拍-二手'), //京东拍拍二手
       JDUserSignPre(stop, 'JDMakeup', '京东商城-美妆'), //京东美妆馆
- # JDUserSignPre(stop, 'JDWomen', '京东商城-女装'), //京东女装馆
+
       JDUserSignPre(stop, 'JDVege', '京东商城-菜场'), //京东菜场
       JingDongCash(stop), //京东现金红包
       JDUserSignPre(stop, 'JDFood', '京东商城-美食'), //京东美食馆
