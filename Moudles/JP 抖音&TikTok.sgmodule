@@ -7,16 +7,11 @@
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) JP 307
-
-(?<=&app_version=)17.5.0(?=.?.?&) 1 307
-(?<=\?version_code=)17.5.0(?=.?.?&) 1 307
-
-(?<=&app_version=)16.6.0(?=.?.?&) 1 307
-(?<=\?version_code=)16.6.0(?=.?.?&) 1 307
-
-(.*video_id=\w{32})(.*watermark=)(.*) $1 302
+(?<=&mcc_mnc=)4 2 307
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 [MITM]
-hostname = %APPEND% *.snssdk.com, *.amemv.com, *.akamaized.net, *.appsflyer.com, *.tiktokv.com, *.muscdn.com, *.byteoversea.com, *.musical.ly, *.ibyteimg.com, *.app-measurement.com
+hostname = %APPEND% *.snssdk.com, *.amemv.com, *.akamaized.net, *.appsflyer.com, *.tiktokv.com, *.muscdn.com, *.byteoversea.com, *.musical.ly, *.ibyteimg.com, *.app-measurement.com, *.tik-tokapi.com
 
 [Script]
 抖音 & TikTok去广告&水印 = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/beilsn/surge-backup/master/Scripts/Aweme.js
