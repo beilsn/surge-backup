@@ -3,7 +3,7 @@
 #!system=ios
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/beilsn/surge-backup/master/Ruleset/TikTok.list
+#RULE-SET,https://raw.githubusercontent.com/beilsn/surge-backup/master/Ruleset/TikTok.list
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) JP 307
