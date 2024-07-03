@@ -5,6 +5,7 @@
 [URL Rewrite]
 "^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads" - reject
 "^https?:\/\/daijia\.kuaidadi\.com\/gateway\?api=prado\.cms\.delivery\.batch&apiVe" - reject
-"^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do" - rejec
+"^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do" - reject
+"^https?+:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\" - reject
 [MITM]
 hostname = %APPEND% *.snssdk.com, *.amemv.com, *.akamaized.net,cdn.kuaidi100.com,daijia.kuaidadi.com,p.kuaidi100.com
