@@ -1,8 +1,10 @@
-#!name=腾讯新闻签到  
-#!desc=腾讯新闻签到 surge-backup
+#!name=快递100
+#!desc=快递100
 #!system=ios
 
-
-[Script]
-# > 腾讯新闻签到
-腾讯新闻 = type=cron,cronexp="*/2 8-10,13-16,19-22 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/txnews.js,script-update-interval=0
+[URL Rewrite]
+"^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads" - reject
+"^https?:\/\/daijia\.kuaidadi\.com\/gateway\?api=prado\.cms\.delivery\.batch&apiVe" - reject
+"^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do" - rejec
+[MITM]
+hostname = %APPEND% *.snssdk.com, *.amemv.com, *.akamaized.net,cdn.kuaidi100.com,daijia.kuaidadi.com,p.kuaidi100.com
