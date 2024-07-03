@@ -10,6 +10,9 @@
 (?<=&mcc_mnc=)4 2 307
 ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
+"^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads" - reject
+"^https?:\/\/daijia\.kuaidadi\.com\/gateway\?api=prado\.cms\.delivery\.batch&apiVe" - reject
+"^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do" - rejec
 [MITM]
-hostname = %APPEND% *.snssdk.com, *.amemv.com, *.akamaized.net, *.appsflyer.com, *.tiktokv.com, *.muscdn.com, *.byteoversea.com, *.musical.ly, *.ibyteimg.com, *.app-measurement.com, *.tik-tokapi.com
+hostname = %APPEND% *.snssdk.com, *.amemv.com, *.akamaized.net, *.appsflyer.com, *.tiktokv.com, *.muscdn.com, *.byteoversea.com, *.musical.ly, *.ibyteimg.com, *.app-measurement.com, *.tik-tokapi.com, cdn.kuaidi100.com, daijia.kuaidadi.com, p.kuaidi100.com
 
